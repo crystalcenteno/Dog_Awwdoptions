@@ -54,6 +54,9 @@ p {
   margin-bottom: 50px;
   margin-right: 50px;
   margin-left: 50px;
+  max-width: 400px;
+  margin: 0 auto;
+  font-size: 26px;
 }
 
 #mains-js { 
@@ -76,6 +79,11 @@ h1 {
   text-align: center;
 }
 
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
 /* ------DESKTOP AND TABLET STYLING------------------------------------*/
 
 div {
@@ -88,9 +96,6 @@ div {
   body {
     margin: auto;
   }
-
-button {
-    visibility: visible;
 }
 
 /* Tablet Styles */
@@ -98,9 +103,6 @@ button {
   body {
     margin: auto;
   }
+}
 
-button {
-    visibility: hidden;
-}
-}
 
