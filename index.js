@@ -67,7 +67,8 @@ function newPetFunc(response) {
 			id: response.petfinder.pets.pet[i].id.$t,
 			description: response.petfinder.pets.pet[i].description.$t,
 			thumbnail: getPicture(i, 'pn', response),
-			picture: getPicture(i, 'x', response)
+			picture: getPicture(i, 'x', response),
+      contact: response.petfinder.pets.pet[i].contact.email.$t,
 		}
 
 		petDataArr.push(pet);
@@ -82,7 +83,7 @@ function showMorePets(response) {
 		var testingImg = document.createElement('img');
 		testingImg.src = petDataArr[i].thumbnail;
 
-		$('#more-pets-info ul').append(`<li value= ` + i + ` class="pet-details" >` + petDataArr[i].name + testingImg.outerHTML + `</li>`);
+		$('#more-pets-info ul').append(`<li value= ` + i + ` class="pet-details" >` + petDataArr[i].name + testingImg.outerHTML + `<h1>${petDataArr[i].contact}</h1>` +  `</li>`);
 	}
 }
 
