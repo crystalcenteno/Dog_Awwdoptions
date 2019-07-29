@@ -1,5 +1,13 @@
 * {
   box-sizing: border-box;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+li.nav-left {
+  font-family: Snell Roundhand, cursive;
+  font-size: 25px;
+  text-align: center;
+  font-weight: 900;
 }
 
 div {
@@ -8,8 +16,6 @@ div {
 }
 
 body {
-  font-family: "Open Sans",
-  sans-serif; 
   font-size: 20px;
   color: black;
   text-align: center;
@@ -23,20 +29,29 @@ footer {
 section {
   min-height: 100px;
   padding: 6% 0;
-  background-color: #bbb;
+  background-color: white;
 }
 
 section:nth-child(even) {
-  background-color: #ddd;
+  background-color: white
 }
 
 header {
   position: relative;
   background-color: transparent;
-  color: white;
+  color: black;
   z-index: 150;
   display: table-cell;
   vertical-align: middle;
+}
+
+nav .icon-img {
+  height: 50px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 1px solid black;
 }
 
 li {
@@ -45,7 +60,7 @@ li {
 }
 
 span.name {
-  color: yellow;
+  color: blue;
 }
 
 p {
@@ -59,13 +74,17 @@ p {
   font-size: 26px;
 }
 
+a {
+  color: blue;
+}
+
 #mains-js { 
   height: 60vh;
   width: 100%; 
-  background-color: silver;
+  background-color: white;
+  background-size: cover;
   background-image: url(""); 
   background-repeat: no-repeat;      
-  background-size: cover; 
   background-position: 50% 50%; 
   display:table;
 } 
@@ -75,13 +94,22 @@ p {
   margin: 0 auto;
 }
 
-h1 {
-  text-align: center;
-}
-
 .container {
   max-width: 400px;
   margin: 0 auto;
+}
+
+li.pet-details {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 35px;
+  text-align: center;
+  padding: 80px 80px 80px 80px;
+}
+
+h1 {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 35px;
+  text-align: center;
 }
 
 /* ------DESKTOP AND TABLET STYLING------------------------------------*/
@@ -103,6 +131,20 @@ div {
   body {
     margin: auto;
   }
+
+  form.search {
+  display: block;
+  margin: 0 auto;
+  }
 }
 
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  body {
+    margin: auto;
+  }
 
+  #pet-search {
+  display: block;
+  margin: 0 auto;
+  }
+}
