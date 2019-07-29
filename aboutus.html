@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
    <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,7 +9,7 @@
       <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>  
    </head>
    <body>
-      <nav role="navigation" class="hidden">
+      <nav role="navigation" class="navbar">
          <ul id="nav-links">
          <li class="nav-left">Dog Awwdoptions</li>
          <img src="https://tf-assets-prod.s3.amazonaws.com/tf-curric/WEB-DEV-001/2.4.3_the_position_property/spacedog.png" class="icon-img" alt="bull dog">
@@ -19,13 +19,32 @@
       <main role="main">
          <div id="mains-js">
             <header>
-               <img src="https://tf-assets-prod.s3.amazonaws.com/tf-curric/WEB-DEV-001/2.4.3_the_position_property/spacedog.png" class="icon-img" alt="bull dog">
-               <h1 role="banner">Why do we help with <span class="name">dog adoptions</span>?<br></h1>
+                <img src="https://tf-assets-prod.s3.amazonaws.com/tf-curric/WEB-DEV-001/2.4.3_the_position_property/spacedog.png" class="icon-img" alt="bull dog">
+               <h1 role="banner">Ready to meet your new <span class="name">best friend</span>?<br> Enter your location below to get matched!</h1>
             </header>
          </div>
          <section id="about">
-            <p> <a href="adopt.html" target="_blank">Dog Awwdoptions</a> was created to showcase that technology can and should be used in a compassionate manner. It is an <a href="https://github.com/crystaldavidson/DogAwwdoptions" target="_blank">open source project</a> that utilizes <a href="https://www.petfinder.com/developers/" target="_blank">pet finder's free API</a> to match adoptable dogs with caring human companions. 
-            </p>
+            <div id="pet-search">
+               <form action="#" class="search">
+                  <label for="query"></label>
+                  <input type="text" placeholder="Zip Code or State" class="js-query" >
+                  <button type="submit" id="submit" >Search</button>
+                  <section>
+                     <label>Select an age</label>
+                     <select id="agepicker" required>
+                        <option value="Baby">0 - 6 Months</option>
+                        <option value="Young">6 Months - 1 Year</option>
+                        <option value="Adult">1 Year +</option>
+                        <option value="Senior">3 Years +</option>
+                     </select>
+                  </section>
+               </form>
+            </div>
+            <div class="container">
+               <div id='more-pets-info'>
+                  <ul class="more-pets-list-ul"></ul>
+               </div>
+            </div>
          </section>
       </main>
       <footer role="content-info">Coded by Crystal Davidson</footer>
