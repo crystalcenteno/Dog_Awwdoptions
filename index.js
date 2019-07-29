@@ -2,7 +2,7 @@
 
 console.log('ready');
 
-
+// Search Bar
 $('.search').submit(function querySearch(e) {
 	e.preventDefault();
 	userQuery();
@@ -11,7 +11,7 @@ $('.search').submit(function querySearch(e) {
 	this.reset();
 });
 
-
+// User Input
 function userQuery() {
 	console.log('userQuery ran');
 
@@ -26,7 +26,7 @@ function userQuery() {
 	});
 }
 
-
+// Requesting data based on user input
 function runPetData(searchedVal, genderr, agepicker, callback) {
 
 
@@ -54,7 +54,7 @@ function runPetData(searchedVal, genderr, agepicker, callback) {
 
 var petDataArr = [];
 
-
+// Listing out pet data (name, image, contact information)
 function newPetFunc(response) {
 
 	console.log('newPetFunction ran --> created new pet Array');
@@ -75,7 +75,7 @@ function newPetFunc(response) {
 	}
 }
 
-
+// Displaying pets
 function showMorePets(response) {
 
 	for (var i = 0; i < 10; i++) {
@@ -86,7 +86,6 @@ function showMorePets(response) {
 		$('#more-pets-info ul').append(`<li value= ` + i + ` class="pet-details" >` + petDataArr[i].name + testingImg.outerHTML + `<h1>${petDataArr[i].contact}</h1>` +  `</li>`);
 	}
 }
-
 
 function getPicture(position, size, response) {
 
