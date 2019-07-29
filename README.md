@@ -16,13 +16,14 @@ HTML/CSS/JavaScript/jQuery
 * JavaScript
 * jQuery 
 * Autodraw
+* PetFinder's free API
 
 
 ## Features
 
-* Takes user input for a location
-* Searches for local dogs for adoptions
-* Displays local dogs that can be adopted
+* Collects users' locations
+* Searches for local dogs up for adoption 
+* Displays adoptable dogs 
 
 ## Demo
 
