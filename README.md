@@ -29,3 +29,6 @@ HTML/CSS/JavaScript/jQuery
 
 - [Live Demo](https://crystaldavidson.github.io/DogAwwdoptions/)
 
+![Image description](link-to-image)
+
+![alt text](http://url/to/img.png)
