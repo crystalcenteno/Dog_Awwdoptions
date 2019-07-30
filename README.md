@@ -31,4 +31,4 @@ HTML/CSS/JavaScript/jQuery
 
 ![Home Page](https://user-images.githubusercontent.com/34665274/62172294-a0b5c500-b2e6-11e9-8ddd-aa85557ea648.png)
 
-
+![About Us Page](https://user-images.githubusercontent.com/34665274/62172415-030ec580-b2e7-11e9-888b-a304329a286d.png)
