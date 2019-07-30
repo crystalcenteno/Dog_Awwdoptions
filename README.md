@@ -29,6 +29,6 @@ HTML/CSS/JavaScript/jQuery
 
 - [Live Demo](https://crystaldavidson.github.io/DogAwwdoptions/)
 
-![Alt text](relative/path/to/img.jpg?raw=true "Title")
+![Alt text]()
 
 
