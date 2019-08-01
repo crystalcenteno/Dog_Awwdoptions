@@ -10,7 +10,6 @@ Dog Awwdoptions was created to showcase that technology can and should be used i
 
 ## Built With
 
-HTML/CSS/JavaScript/jQuery
 * HTML
 * CSS
 * JavaScript
