@@ -42,14 +42,17 @@ function runPetData(searchedVal, genderr, agepicker, callback) {
 			throw new Error(response.statusText)
 		})
 		.then(petFinderJson => {
+      if (petFinderJson.petfinder.header.status.code.$t != '100') {
+        throw petFinderJson.petfinder.header.status.message.$t;
+      }
 			console.log(petFinderJson.petfinder.pets.pet)
 			newPetFunc(petFinderJson);
 			callback(petDataArr);
-
 		})
 		.catch((err) => {
-			console.log(err)
+			alert(err)
 		})
+
 }
 
 var petDataArr = [];
